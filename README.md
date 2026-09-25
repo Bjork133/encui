@@ -14,9 +14,7 @@
 ## Сборка
 
 ```bash
-mkdir build && cd build
-cmake ..
-make
+mkdir build && cd build && cmake -DENABLE_TESTS=OFF .. && make -j$(nproc)
 ```
 
 ## Использование
